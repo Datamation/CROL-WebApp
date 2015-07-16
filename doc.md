@@ -48,11 +48,11 @@ vagrant@crownyc-ubuntu-trusty64:$ ```cd ~/dev/parsers/addressparser```
 
   5. Update the addressparser with the latest version
 
-vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ git pull
+vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ ```git pull```
 
   6. Check that the correct Java version is installed
 
-:~/dev/parsers/addressparser$ java -version
+:~/dev/parsers/addressparser$ ```java -version```
 
 java version "1.7.0_79"
 
