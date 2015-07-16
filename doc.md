@@ -10,9 +10,9 @@
   1. [Virtualbox](https://www.virtualbox.org/)
   2. [Vagrant](https://www.vagrantup.com/)
 
-**Important:** You'll have to edit the host's /etc/hosts file to resolve crownyc-ubuntu-trusty64 to 127.0.0.1
+**Important:** You'll have to edit the host's /etc/hosts file to resolve crownyc-ubuntu-trusty64 to localhost.
 
-crownyc-ubuntu-trusty64	127.0.0.1
+```crownyc-ubuntu-trusty64	127.0.0.1```
 
   1. Vagrantfile
 
