@@ -53,8 +53,8 @@ vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ ```git pull```
 ```java version "1.7.0_79"```
 
 ```OpenJDK Runtime Environment (IcedTea 2.5.5) (7u79-2.5.5-0ubuntu0.14.04.2)
-
-OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)```
+OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
+```
 
   7. Isolate and test the addressparser
 
