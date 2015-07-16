@@ -56,11 +56,12 @@ vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ ```git pull```
 
 :~/dev/parsers/addressparser$ ```java -version```
 
+<pre>
 java version "1.7.0_79"
 
 OpenJDK Runtime Environment (IcedTea 2.5.5) (7u79-2.5.5-0ubuntu0.14.04.2)
-
 OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
+</pre>
 
   7. Isolate and test the addressparser
 
@@ -74,17 +75,19 @@ OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
 
 :~/dev/parsers/addressparser$ ```sudo vi ENV```
 
+<pre>
 export DOITT_CROL_APP_ID=[paste DOITT ID]
-
 export DOITT_CROL_APP_KEY=[paste DOITT KEY]
+</pre>
 
 **Check they are indeed available**
 
 :~/dev/parsers/addressparser$ ```cat ENV```
 
+<pre>
 export DOITT_CROL_APP_ID=[ID]
-
 export DOITT_CROL_APP_KEY=[KEY]
+</pre>
 
 **Source the file and activate**
 
@@ -96,13 +99,13 @@ export DOITT_CROL_APP_KEY=[KEY]
 
 :~/dev/parsers/addressparser$ ```sudo service nginx stop```
 
-  10. Start the web server
+  10. Start up the web server
 
 :~/dev/parsers/addressparser$ ```python webserver.py```
 
 **Now from your HOST browser navigate to:** ```http://crownyc-ubuntu-trusty64:5000/api```
 
-# Endpoints 
+# Endpoints:
   1. crol-interface: [http://crownyc-ubuntu-trusty64:8080/crol/v12](http://crownyc-ubuntu-trusty64:8080/crol/v12)
   2. GlassFish Admin:[http://crownyc-ubuntu-trusty64:4848](http://crownyc-ubuntu-trusty64:4848)
   3. Address Parser 
