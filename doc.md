@@ -28,7 +28,7 @@
     ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
     ==> default: to force provisioning. Provisioners marked to run always will still run.
 
-  3. SSH into the vm-bpx
+  3. SSH into the vm-box
 
 ```vagrant ssh```
 
@@ -53,8 +53,7 @@ vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ ```git pull```
 ```java version "1.7.0_79"```
 
 ```OpenJDK Runtime Environment (IcedTea 2.5.5) (7u79-2.5.5-0ubuntu0.14.04.2)
-OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
-```
+OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)```
 
   7. Isolate and test the addressparser
 
