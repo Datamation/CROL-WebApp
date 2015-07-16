@@ -30,11 +30,11 @@ crownyc-ubuntu-trusty64	127.0.0.1
 
   3. SSH into the vm-bpx
 
-`vagrant@crownyc-ubuntu-trusty64:$ vagrant ssh
+`vagrant@crownyc-ubuntu-trusty64:$ vagrant ssh`
 
 Dump the contents of the following to see config options:
 
-cat /etc/init/addressparser.conf 
+`cat /etc/init/addressparser.conf 
 cat /etc/nginx/sites-available/addressparser`
 
   4. Switch to the addresparser 
@@ -61,10 +61,11 @@ OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)`
 
   8. Create ENV and paste in DOITT API_ID and APP_KEY
 
-`vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ touch ENV 
+`vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ touch ENV`
 
-vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ sudo vi ENV 
-export DOITT_CROL_APP_ID=**************
+`vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ sudo vi ENV 
+
+`export DOITT_CROL_APP_ID=**************
 export DOITT_CROL_APP_KEY=*******************`
 
 Check they are indeed availabe
