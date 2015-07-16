@@ -18,8 +18,10 @@ layout:
 **Important:** You'll have to edit the host's /etc/hosts file to resolve crownyc-ubuntu-trusty64 to localhost.
 
 ```crownyc-ubuntu-trusty64	127.0.0.1```
-  1. Vagrantfile
-  2. Boot the virtual box
+
+######Vagrantfile
+
+######Boot the virtual box
 
 ```vagrant up --provider=virtualbox```
 <pre>
