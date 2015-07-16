@@ -23,16 +23,16 @@ layout:
 
 ```vagrant up --provider=virtualbox```
 <pre>
-```==> default: Machine booted and ready!
+==> default: Machine booted and ready!
 ==> default: Checking for guest additions in VM...
 ==> default: Mounting shared folders
     default: /vagrant => /Users/marc/Sites/crow-vm-box...
     default: /vagrant_data => /Users/marc/Sites/crow-vm-box/data...
     ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`...
     ==> default: to force provisioning. Provisioners marked to run always will still run
-  3. SSH into the vm-box
-  ```
 </pre>
+
+  3. SSH into the vm-box
 
 ```vagrant ssh```
 
@@ -40,12 +40,15 @@ Dump the contents of the following to see config options:
 
 ```cat /etc/init/addressparser.conf
 cat /etc/nginx/sites-available/addressparser```
+
   4. Switch to the addresparser 
 
 vagrant@crownyc-ubuntu-trusty64:$ ```cd ~/dev/parsers/addressparser```
+
   5. Update the addressparser with the latest version
 
 vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ ```git pull```
+
   6. Check that the correct Java version is installed
 
 :~/dev/parsers/addressparser$ ```java -version```
@@ -54,11 +57,13 @@ java version "1.7.0_79"
 
 OpenJDK Runtime Environment (IcedTea 2.5.5) (7u79-2.5.5-0ubuntu0.14.04.2)
 OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
+
   7. Isolate and test the addressparser
 
 :~/dev/parsers/addressparser$ ```pwd```
 
 /home/vagrant/dev/parsers/addressparser
+
   8. Create ENV and paste in DOITT API_ID and APP_KEY
 
 :~/dev/parsers/addressparser$ ```touch ENV```
@@ -80,9 +85,11 @@ export DOITT_CROL_APP_KEY=[KEY]
 :~/dev/parsers/addressparser$ ```source ENV```
 
 :~/dev/parsers/addressparser$ ```source env_addressparser/bin/activate```
+
   9. Stop the nginx service
 
 :~/dev/parsers/addressparser$ ```sudo service nginx stop```
+
   10. Start the web server
 
 :~/dev/parsers/addressparser$ ```python webserver.py```
