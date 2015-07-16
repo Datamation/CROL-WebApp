@@ -12,8 +12,7 @@
 
 **Important:** You'll have to edit the host's /etc/hosts file to resolve crownyc-ubuntu-trusty64 to 127.0.0.1
 
-```crownyc-ubuntu-trusty64	127.0.0.1
-```
+```crownyc-ubuntu-trusty64	127.0.0.1```
 
   1. Vagrantfile
 
@@ -37,7 +36,6 @@
 Dump the contents of the following to see config options:
 
 ```cat /etc/init/addressparser.conf
-
 cat /etc/nginx/sites-available/addressparser
 ```
 
@@ -54,7 +52,6 @@ cat /etc/nginx/sites-available/addressparser
 ```:~/dev/parsers/addressparser$ java -version```
 
 ```java version "1.7.0_79"
-
 OpenJDK Runtime Environment (IcedTea 2.5.5) (7u79-2.5.5-0ubuntu0.14.04.2)
 OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
 ```
@@ -62,16 +59,14 @@ OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
   7. Isolate and test the addressparser
 
 ```:~/dev/parsers/addressparser$ pwd
-
 /home/vagrant/dev/parsers/addressparser
 ```
 
   8. Create ENV and paste in DOITT API_ID and APP_KEY
 
-```:~/dev/parsers/addressparser$ touch ENV
+```:~/dev/parsers/addressparser$ touch ENV```
 
-:~/dev/parsers/addressparser$ sudo vi ENV
-
+```:~/dev/parsers/addressparser$ sudo vi ENV
 export DOITT_CROL_APP_ID=[paste DOITT ID]
 export DOITT_CROL_APP_KEY=[paste DOITT KEY]
 ```
@@ -79,17 +74,15 @@ export DOITT_CROL_APP_KEY=[paste DOITT KEY]
 Check they are indeed availabe
 
 ```:~/dev/parsers/addressparser$ cat ENV
-
 export DOITT_CROL_APP_ID=[ID]
 export DOITT_CROL_APP_KEY=[KEY]
 ```
 
 Source the file and activate
 
-```:~/dev/parsers/addressparser$ source ENV
+```:~/dev/parsers/addressparser$ source ENV```
 
-:~/dev/parsers/addressparser$ source env_addressparser/bin/activate
-```
+```:~/dev/parsers/addressparser$ source env_addressparser/bin/activate```
 
   9. Stop the nginx service
 
