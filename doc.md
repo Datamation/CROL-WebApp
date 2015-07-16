@@ -24,15 +24,15 @@ layout:
 
    ```vagrant up --provider=virtualbox```
 
-   <pre>
-   ==> default: Machine booted and ready!
-   ==> default: Checking for guest additions in VM...
-   ==> default: Mounting shared folders
-    default: /vagrant => /Users/marc/Sites/crow-vm-box...
-    default: /vagrant_data => /Users/marc/Sites/crow-vm-box/data...
-    ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`...
-    ==> default: to force provisioning. Provisioners marked to run always will still run
-   </pre>
+  <pre>
+  ==> default: Machine booted and ready!
+  ==> default: Checking for guest additions in VM...
+  ==> default: Mounting shared folders
+      default: /vagrant => /Users/marc/Sites/crow-vm-box...
+      default: /vagrant_data => /Users/marc/Sites/crow-vm-box/data...
+  ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`...
+  ==> default: to force provisioning. Provisioners marked to run always will still run
+  </pre>
 
   3. SSH into the vm-box
 
@@ -71,25 +71,27 @@ layout:
 
    /home/vagrant/dev/parsers/addressparser
 
-  8. Create ENV and paste in DOITT API_ID and APP_KEY
+  8. Add the DOITT API_ID and APP_KEY
+
+   Create ENV
 
    :~/dev/parsers/addressparser$ ```touch ENV```
 
    :~/dev/parsers/addressparser$ ```sudo vi ENV```
 
-<pre>
-export DOITT_CROL_APP_ID=[paste DOITT ID]
-export DOITT_CROL_APP_KEY=[paste DOITT KEY]
-</pre>
+    <pre>
+    export DOITT_CROL_APP_ID=[paste DOITT ID]
+    export DOITT_CROL_APP_KEY=[paste DOITT KEY]
+    </pre>
 
    **Check they are indeed available**
 
    :~/dev/parsers/addressparser$ ```cat ENV```
 
-<pre>
-export DOITT_CROL_APP_ID=[*******]
-export DOITT_CROL_APP_KEY=[****************]
-</pre>
+    <pre>
+    export DOITT_CROL_APP_ID=[*******]
+    export DOITT_CROL_APP_KEY=[****************]
+    </pre>
 
    **Source the file and activate**
 
