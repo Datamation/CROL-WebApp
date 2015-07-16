@@ -19,10 +19,11 @@ layout:
 
 ```crownyc-ubuntu-trusty64	127.0.0.1```
 
-  1. Vagrantfile
+  1. Vagrantfile is the virtualbox config
   2. Boot the virtual box
 
-```vagrant up --provider=virtualbox```
+   ```vagrant up --provider=virtualbox```
+
 <pre>
 ==> default: Machine booted and ready!
 ==> default: Checking for guest additions in VM...
@@ -35,23 +36,23 @@ layout:
 
   3. SSH into the vm-box
 
-```vagrant ssh```
+   ```vagrant ssh```
 
-Dump the contents of the following to see config options:
+   Now dump the contents of the following to see config options:
 
-```cat /etc/init/addressparser.conf```
+   ```cat /etc/init/addressparser.conf```
 
-...and this one to view default site info:
+   and this one to view default site info:
 
-```cat /etc/nginx/sites-available/addressparser```
+   ```cat /etc/nginx/sites-available/addressparser```
 
   4. Switch to the addressparser 
 
-vagrant@crownyc-ubuntu-trusty64:$ ```cd ~/dev/parsers/addressparser```
+   vagrant@crownyc-ubuntu-trusty64:$ ```cd ~/dev/parsers/addressparser```
 
   5. Update the addressparser with the latest version
 
-vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ ```git pull```
+:~/dev/parsers/addressparser$ ```git pull```
 
   6. Check that the correct Java version is installed
 
