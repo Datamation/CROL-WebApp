@@ -19,8 +19,7 @@
 
   2. Boot the virtual box
 
-```vagrant up --provider=virtualbox
-```
+```vagrant up --provider=virtualbox```
 
 ```==> default: Machine booted and ready!
 ==> default: Checking for guest additions in VM...
@@ -33,8 +32,7 @@
 
   3. SSH into the vm-bpx
 
-```vagrant ssh
-```
+```vagrant ssh```
 
 Dump the contents of the following to see config options:
 
@@ -45,18 +43,15 @@ cat /etc/nginx/sites-available/addressparser
 
   4. Switch to the addresparser 
 
-```vagrant@crownyc-ubuntu-trusty64:$ cd ~/dev/parsers/addressparser
-```
+```vagrant@crownyc-ubuntu-trusty64:$ cd ~/dev/parsers/addressparser```
 
   5. Update the addressparser with the latest version
 
-```vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ git pull
-```
+```vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ git pull```
 
   6. Check that the correct Java version is installed
 
-```:~/dev/parsers/addressparser$ java -version
-```
+```:~/dev/parsers/addressparser$ java -version```
 
 ```java version "1.7.0_79"
 
@@ -98,13 +93,11 @@ Source the file and activate
 
   9. Stop the nginx service
 
-```:~/dev/parsers/addressparser$ sudo service nginx stop
-```
+```:~/dev/parsers/addressparser$ sudo service nginx stop```
 
   10. Start the web server
 
-```:~/dev/parsers/addressparser$ python webserver.py
-```
+```:~/dev/parsers/addressparser$ python webserver.py```
 
 Then from HOST browser navigate to: http://crownyc-ubuntu-trusty64:5000/api
 
