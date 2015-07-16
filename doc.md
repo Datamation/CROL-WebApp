@@ -67,21 +67,15 @@ OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)```
 
 :~/dev/parsers/addressparser$ ```sudo vi ENV```
 
-```
-export DOITT_CROL_APP_ID=[paste DOITT ID]
-
-export DOITT_CROL_APP_KEY=[paste DOITT KEY]
-```
+```export DOITT_CROL_APP_ID=[paste DOITT ID]
+export DOITT_CROL_APP_KEY=[paste DOITT KEY]```
 
 Check they are indeed availabe
 
 :~/dev/parsers/addressparser$ ```cat ENV```
 
-```
-export DOITT_CROL_APP_ID=[ID]
-
-export DOITT_CROL_APP_KEY=[KEY]
-```
+```export DOITT_CROL_APP_ID=[ID]
+export DOITT_CROL_APP_KEY=[KEY]```
 
 Source the file and activate
 
