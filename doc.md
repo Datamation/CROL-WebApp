@@ -76,7 +76,7 @@ export DOITT_CROL_APP_ID=[paste DOITT ID]
 
 export DOITT_CROL_APP_KEY=[paste DOITT KEY]
 
-**Check they are indeed availabe**
+**Check they are indeed available**
 
 :~/dev/parsers/addressparser$ ```cat ENV```
 
@@ -98,7 +98,7 @@ export DOITT_CROL_APP_KEY=[KEY]
 
 :~/dev/parsers/addressparser$ ```python webserver.py```
 
-**Now from your HOST browser navigate to: ```http://crownyc-ubuntu-trusty64:5000/api```
+**Now from your HOST browser navigate to:** ```http://crownyc-ubuntu-trusty64:5000/api```
 
 # Endpoints 
   1. crol-interface: [http://crownyc-ubuntu-trusty64:8080/crol/v12](http://crownyc-ubuntu-trusty64:8080/crol/v12)
