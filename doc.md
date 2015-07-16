@@ -25,21 +25,21 @@ layout:
 
 ```vagrant up --provider=virtualbox```
 
-```==> default: Machine booted and ready!...
+==> default: Machine booted and ready!
 ==> default: Checking for guest additions in VM...
-==> default: Mounting shared folders...
+==> default: Mounting shared folders
     default: /vagrant => /Users/marc/Sites/crow-vm-box...
     default: /vagrant_data => /Users/marc/Sites/crow-vm-box/data...
     ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`...
-    ==> default: to force provisioning. Provisioners marked to run always will still run...
-```
+    ==> default: to force provisioning. Provisioners marked to run always will still run
+
   3. SSH into the vm-box
 
 ```vagrant ssh```
 
 Dump the contents of the following to see config options:
 
-```cat /etc/init/addressparser.conf...
+```cat /etc/init/addressparser.conf
 cat /etc/nginx/sites-available/addressparser```
 
   4. Switch to the addresparser 
