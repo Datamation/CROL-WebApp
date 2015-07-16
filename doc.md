@@ -35,6 +35,7 @@
 Dump the contents of the following to see config options:
 
 ```cat /etc/init/addressparser.conf
+
 cat /etc/nginx/sites-available/addressparser
 ```
 
@@ -51,6 +52,7 @@ cat /etc/nginx/sites-available/addressparser
 ```:~/dev/parsers/addressparser$ java -version```
 
 ```java version "1.7.0_79"
+
 OpenJDK Runtime Environment (IcedTea 2.5.5) (7u79-2.5.5-0ubuntu0.14.04.2)
 OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
 ```
@@ -58,6 +60,7 @@ OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
   7. Isolate and test the addressparser
 
 ```:~/dev/parsers/addressparser$ pwd
+
 /home/vagrant/dev/parsers/addressparser
 ```
 
@@ -66,6 +69,7 @@ OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
 ```:~/dev/parsers/addressparser$ touch ENV```
 
 ```:~/dev/parsers/addressparser$ sudo vi ENV
+
 export DOITT_CROL_APP_ID=[paste DOITT ID]
 export DOITT_CROL_APP_KEY=[paste DOITT KEY]
 ```
@@ -73,6 +77,7 @@ export DOITT_CROL_APP_KEY=[paste DOITT KEY]
 Check they are indeed availabe
 
 ```:~/dev/parsers/addressparser$ cat ENV
+
 export DOITT_CROL_APP_ID=[ID]
 export DOITT_CROL_APP_KEY=[KEY]
 ```
