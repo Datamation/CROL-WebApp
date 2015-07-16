@@ -85,8 +85,8 @@ export DOITT_CROL_APP_KEY=[paste DOITT KEY]
 :~/dev/parsers/addressparser$ ```cat ENV```
 
 <pre>
-export DOITT_CROL_APP_ID=[ID]
-export DOITT_CROL_APP_KEY=[KEY]
+export DOITT_CROL_APP_ID=[*******]
+export DOITT_CROL_APP_KEY=[****************]
 </pre>
 
 **Source the file and activate**
