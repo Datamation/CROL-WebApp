@@ -19,7 +19,7 @@ layout:
 
 ```crownyc-ubuntu-trusty64	127.0.0.1```
 
-  1. Vagrantfile is the virtualbox config
+  1. Vagrantfile is the Vagrant virtualbox config file
   2. Boot the virtual box
 
    ```vagrant up --provider=virtualbox```
