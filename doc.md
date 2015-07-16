@@ -19,9 +19,8 @@ layout:
 
 ```crownyc-ubuntu-trusty64	127.0.0.1```
 
-######Vagrantfile
-
-######Boot the virtual box
+  1. Vagrantfile
+  2. Boot the virtual box
 
 ```vagrant up --provider=virtualbox```
 <pre>
