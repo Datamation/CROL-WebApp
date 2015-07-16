@@ -115,6 +115,7 @@ export DOITT_CROL_APP_KEY=[****************]
 
 ## Some useful commands: 
 
+<pre>
 nginx: sudo service nginx (stop | start | restart)
 addressparser: sudo (stop | start | restart) addressparser
-
+</pre>
