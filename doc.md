@@ -18,9 +18,9 @@
 
   2. Boot the virtual box
 
-```vagrant up --provider=virtualbox
+```vagrant up --provider=virtualbox```
 
-==> default: Machine booted and ready!
+```==> default: Machine booted and ready!
 ==> default: Checking for guest additions in VM...
 ==> default: Mounting shared folders...
     default: /vagrant => /Users/marc/Sites/crow-vm-box
@@ -48,7 +48,7 @@ cat /etc/nginx/sites-available/addressparser```
 
   6. Check that the correct Java version is installed
 
-```:~/dev/parsers/addressparser$ java -version
+```:~/dev/parsers/addressparser$ java -version```
 
 ```java version "1.7.0_79"
 
