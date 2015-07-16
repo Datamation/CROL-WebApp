@@ -15,11 +15,14 @@ layout:
   1. [Virtualbox](https://www.virtualbox.org/)
   2. [Vagrant](https://www.vagrantup.com/)
 
-**Important:** You'll have to edit the host's /etc/hosts file to resolve crownyc-ubuntu-trusty64 to localhost.
+   **Important:** You'll have to edit the host's /etc/hosts file to resolve crownyc-ubuntu-trusty64 to localhost.
 
-```crownyc-ubuntu-trusty64	127.0.0.1```
+   ```crownyc-ubuntu-trusty64	127.0.0.1```
 
-  1. Vagrantfile is the Vagrant virtualbox config file
+   ```Vagrantfile``` Vagrant virtualbox config file
+
+# Installation
+
   2. Boot the virtual box
 
    ```vagrant up --provider=virtualbox```
