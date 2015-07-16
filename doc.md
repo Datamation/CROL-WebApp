@@ -36,8 +36,7 @@ Dump the contents of the following to see config options:
 
 ```cat /etc/init/addressparser.conf
 
-cat /etc/nginx/sites-available/addressparser
-```
+cat /etc/nginx/sites-available/addressparser```
 
   4. Switch to the addresparser 
 
