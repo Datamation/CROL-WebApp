@@ -38,8 +38,9 @@ layout:
 
 Dump the contents of the following to see config options:
 
-```cat /etc/init/addressparser.conf
-cat /etc/nginx/sites-available/addressparser```
+cat /etc/init/addressparser.conf
+
+cat /etc/nginx/sites-available/addressparser
 
   4. Switch to the addresparser 
 
@@ -56,6 +57,7 @@ vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ ```git pull```
 java version "1.7.0_79"
 
 OpenJDK Runtime Environment (IcedTea 2.5.5) (7u79-2.5.5-0ubuntu0.14.04.2)
+
 OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
 
   7. Isolate and test the addressparser
@@ -71,6 +73,7 @@ OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
 :~/dev/parsers/addressparser$ ```sudo vi ENV```
 
 export DOITT_CROL_APP_ID=[paste DOITT ID]
+
 export DOITT_CROL_APP_KEY=[paste DOITT KEY]
 
 **Check they are indeed availabe**
@@ -78,6 +81,7 @@ export DOITT_CROL_APP_KEY=[paste DOITT KEY]
 :~/dev/parsers/addressparser$ ```cat ENV```
 
 export DOITT_CROL_APP_ID=[ID]
+
 export DOITT_CROL_APP_KEY=[KEY]
 
 **Source the file and activate**
