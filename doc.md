@@ -40,15 +40,15 @@ Dump the contents of the following to see config options:
 
   4. Switch to the addresparser 
 
-```vagrant@crownyc-ubuntu-trusty64:$ cd ~/dev/parsers/addressparser```
+vagrant@crownyc-ubuntu-trusty64:$ ```cd ~/dev/parsers/addressparser```
 
   5. Update the addressparser with the latest version
 
-```vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ git pull```
+vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ ```git pull```
 
   6. Check that the correct Java version is installed
 
-```:~/dev/parsers/addressparser$ java -version```
+:~/dev/parsers/addressparser$ ```java -version```
 
 ```java version "1.7.0_79"```
 
@@ -58,41 +58,45 @@ OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)```
 
   7. Isolate and test the addressparser
 
-```:~/dev/parsers/addressparser$ pwd```
+:~/dev/parsers/addressparser$ ```pwd```
 
 ```/home/vagrant/dev/parsers/addressparser```
 
   8. Create ENV and paste in DOITT API_ID and APP_KEY
 
-```:~/dev/parsers/addressparser$ touch ENV```
+:~/dev/parsers/addressparser$ ```touch ENV```
 
-```:~/dev/parsers/addressparser$ sudo vi ENV```
+:~/dev/parsers/addressparser$ ```sudo vi ENV```
 
-```export DOITT_CROL_APP_ID=[paste DOITT ID]
+```
+export DOITT_CROL_APP_ID=[paste DOITT ID]
+
 export DOITT_CROL_APP_KEY=[paste DOITT KEY]
 ```
 
 Check they are indeed availabe
 
-```:~/dev/parsers/addressparser$ cat ENV```
+:~/dev/parsers/addressparser$ ```cat ENV```
 
-```export DOITT_CROL_APP_ID=[ID]
+```
+export DOITT_CROL_APP_ID=[ID]
+
 export DOITT_CROL_APP_KEY=[KEY]
 ```
 
 Source the file and activate
 
-```:~/dev/parsers/addressparser$ source ENV```
+:~/dev/parsers/addressparser$ ```source ENV```
 
-```:~/dev/parsers/addressparser$ source env_addressparser/bin/activate```
+:~/dev/parsers/addressparser$ ```source env_addressparser/bin/activate```
 
   9. Stop the nginx service
 
-```:~/dev/parsers/addressparser$ sudo service nginx stop```
+:~/dev/parsers/addressparser$ ```sudo service nginx stop```
 
   10. Start the web server
 
-```:~/dev/parsers/addressparser$ python webserver.py```
+:~/dev/parsers/addressparser$ ```python webserver.py```
 
 Then from HOST browser navigate to: http://crownyc-ubuntu-trusty64:5000/api
 
@@ -106,6 +110,6 @@ Then from HOST browser navigate to: http://crownyc-ubuntu-trusty64:5000/api
 
 ## Some useful commands: 
 
-`nginx: sudo service nginx (stop | start | restart)
-addressparser: sudo (stop | start | restart) addressparser`
+```nginx: sudo service nginx (stop | start | restart)```
+```addressparser: sudo (stop | start | restart) addressparser```
 
