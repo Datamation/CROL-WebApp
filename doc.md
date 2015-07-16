@@ -1,3 +1,7 @@
+---
+title: crol-webapp running a local vm-box
+---
+
 # What's in the box?
 
   1. GlassFish4-1
