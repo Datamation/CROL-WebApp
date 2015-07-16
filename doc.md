@@ -18,29 +18,28 @@ crownyc-ubuntu-trusty64	127.0.0.1
 
   2. Boot the virtual box
 
-vagrant up --provider=virtualbox
+```vagrant up --provider=virtualbox```
 
-==> default: Machine booted and ready!
+==> default: Machine booted and ready!...
 ==> default: Checking for guest additions in VM...
 ==> default: Mounting shared folders...
-    default: /vagrant => /Users/marc/Sites/crow-vm-box
-    default: /vagrant_data => /Users/marc/Sites/crow-vm-box/data
-    ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
-    ==> default: to force provisioning. Provisioners marked to run always will still run.
+    default: /vagrant => /Users/marc/Sites/crow-vm-box...
+    default: /vagrant_data => /Users/marc/Sites/crow-vm-box/data...
+    ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`...
+    ==> default: to force provisioning. Provisioners marked to run always will still run...
 
   3. SSH into the vm-box
 
-vagrant ssh
+```vagrant ssh```
 
 Dump the contents of the following to see config options:
 
-cat /etc/init/addressparser.conf
-
-cat /etc/nginx/sites-available/addressparser
+```cat /etc/init/addressparser.conf...
+cat /etc/nginx/sites-available/addressparser```
 
   4. Switch to the addresparser 
 
-vagrant@crownyc-ubuntu-trusty64:$ cd ~/dev/parsers/addressparser
+vagrant@crownyc-ubuntu-trusty64:$ ```cd ~/dev/parsers/addressparser```
 
   5. Update the addressparser with the latest version
 
@@ -52,8 +51,7 @@ vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ git pull
 
 java version "1.7.0_79"
 
-OpenJDK Runtime Environment (IcedTea 2.5.5) (7u79-2.5.5-0ubuntu0.14.04.2)
-
+OpenJDK Runtime Environment (IcedTea 2.5.5) (7u79-2.5.5-0ubuntu0.14.04.2)...
 OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
 
   7. Isolate and test the addressparser
@@ -68,16 +66,14 @@ OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
 
 :~/dev/parsers/addressparser$ sudo vi ENV
 
-export DOITT_CROL_APP_ID=[paste DOITT ID]
-
+export DOITT_CROL_APP_ID=[paste DOITT ID]...
 export DOITT_CROL_APP_KEY=[paste DOITT KEY]
 
 **Check they are indeed availabe**
 
 :~/dev/parsers/addressparser$ cat ENV
 
-export DOITT_CROL_APP_ID=[ID]
-
+export DOITT_CROL_APP_ID=[ID]...
 export DOITT_CROL_APP_KEY=[KEY]
 
 **Source the file and activate**
