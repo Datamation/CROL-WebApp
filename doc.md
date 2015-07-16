@@ -40,9 +40,11 @@ Dump the contents of the following to see config options:
 
 cat /etc/init/addressparser.conf
 
+...and this one to view default site info:
+
 cat /etc/nginx/sites-available/addressparser
 
-  4. Switch to the addresparser 
+  4. Switch to the addressparser 
 
 vagrant@crownyc-ubuntu-trusty64:$ ```cd ~/dev/parsers/addressparser```
 
