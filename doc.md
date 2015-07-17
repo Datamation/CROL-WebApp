@@ -81,7 +81,9 @@ python webserver.py
    ```
 
 Now from your HOST browser navigate to: 
-```http://crownyc-ubuntu-trusty64:5000/api```
+```
+http://crownyc-ubuntu-trusty64:5000/api
+```
 
 ### Endpoints:
   1. crol-interface: [http://crownyc-ubuntu-trusty64:8080/crol/v12](http://crownyc-ubuntu-trusty64:8080/crol/v12)
