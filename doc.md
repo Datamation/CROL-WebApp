@@ -13,7 +13,7 @@ highlighter: pygments
   3. nginx
   4. uWSGI
 
-###Required Prerequisites
+###Required Prerequisites:
 
   1. [Virtualbox](https://www.virtualbox.org/)
   2. [Vagrant](https://www.vagrantup.com/)
@@ -24,7 +24,7 @@ highlighter: pygments
 
    ```Vagrantfile``` Vagrant virtualbox config file
 
-###Running the standalone box
+###Running the standalone box:
 
   In the terminal type:
 
@@ -82,7 +82,10 @@ python webserver.py
 
 Now from your HOST browser navigate to: ```http://crownyc-ubuntu-trusty64:5000/api```
 
-### Endpoints:
+###The NYC Address Parser:
+addressparser is the python library for parsing NYC addresses. [See this example](https://github.com/CityOfNewYork/addressparser).
+
+### API Endpoints:
   1. crol-interface: [http://crownyc-ubuntu-trusty64:8080/crol/v12](http://crownyc-ubuntu-trusty64:8080/crol/v12)
   2. GlassFish Admin:[http://crownyc-ubuntu-trusty64:4848](http://crownyc-ubuntu-trusty64:4848)
   3. Address Parser 
