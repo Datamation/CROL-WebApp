@@ -24,11 +24,11 @@ layout:
 
 ###Running Standalone
 
-  2. In the terminal type
+  1. In the terminal type
 
   ```
   vagrant up --provider=virtualbox
-
+  ```
   <pre>
   ==> default: Machine booted and ready!
   ==> default: Checking for guest additions in VM...
@@ -39,6 +39,7 @@ layout:
   ==> default: to force provisioning. Provisioners marked to run always will still run
   </pre>
 
+  ```
   # SSH into the vm-box
 
   vagrant ssh
@@ -58,23 +59,12 @@ layout:
   # Update the addressparser with the latest version
 
   git pull
+  ```
 
-  # Check that the correct Java version is installed
+  2. Isolate and test the addressparser
 
-  java -version
-
-   <pre>
-   java version "1.7.0_79"
-
-   OpenJDK Runtime Environment (IcedTea 2.5.5) (7u79-2.5.5-0ubuntu0.14.04.2)
-   OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
-   </pre>
-
-  # Isolate and test the addressparser
-
-  pwd
-
-   /home/vagrant/dev/parsers/addressparser
+  ```
+  pwd --> /home/vagrant/dev/parsers/addressparser
 
   # Create ENV and ddd the DOITT API_ID and APP_KEY
    
@@ -121,7 +111,19 @@ layout:
 
 ## Some useful commands: 
 
-<pre>
+```
 nginx: sudo service nginx (stop | start | restart)
 addressparser: sudo (stop | start | restart) addressparser
-</pre>
+```
+
+  ```
+  # Check that the correct Java version is installed
+
+  java -version
+  ```
+   <pre>
+   java version "1.7.0_79"
+
+   OpenJDK Runtime Environment (IcedTea 2.5.5) (7u79-2.5.5-0ubuntu0.14.04.2)
+   OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
+   </pre>
