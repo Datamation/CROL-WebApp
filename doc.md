@@ -22,22 +22,22 @@ layout:
 
    ```Vagrantfile``` Vagrant virtualbox config file
 
-###Running Standalone
+###Running the standalone box
 
   In the terminal type:
 
   ```
 vagrant up --provider=virtualbox
   ```
-  And wait for it to start up...
+And wait for it to start up...
   ```
-  ==> default: Machine booted and ready!
-  ==> default: Checking for guest additions in VM...
-  ==> default: Mounting shared folders
-      default: /vagrant => /Users/marc/Sites/crow-vm-box...
-      default: /vagrant_data => /Users/marc/Sites/crow-vm-box/data...
-  ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`...
-  ==> default: to force provisioning. Provisioners marked to run always will still run
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+==> default: Mounting shared folders
+    default: /vagrant => /Users/marc/Sites/crow-vm-box...
+    default: /vagrant_data => /Users/marc/Sites/crow-vm-box/data...
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`...
+==> default: to force provisioning. Provisioners marked to run always will still run
   ```
   SSH into the vm-box:
   ```
@@ -62,17 +62,17 @@ Isolate and test the addressparser:
 touch ENV
 sudo vi ENV
   ```
-    
-    export DOITT_CROL_APP_ID=[Your DOITT ID]
-    export DOITT_CROL_APP_KEY=[Your DOITT KEY]
+
+ export DOITT_CROL_APP_ID=[Your DOITT ID]
+ export DOITT_CROL_APP_KEY=[Your DOITT KEY]
     
   ```
 # And check they are indeed available
 cat ENV
   ```
 
-    export DOITT_CROL_APP_ID=[*******]
-    export DOITT_CROL_APP_KEY=[****************]
+ export DOITT_CROL_APP_ID=[*******]
+ export DOITT_CROL_APP_KEY=[****************]
 
   ```
 # **Source and activate**
