@@ -64,20 +64,15 @@ Isolate and test the addressparser:
 touch ENV
 sudo vi ENV
   ```
-Ex:
+Example:
 
- > export DOITT_CROL_APP_ID=[Your DOITT ID]
- 
- > export DOITT_CROL_APP_KEY=[Your DOITT KEY]
+> export DOITT_CROL_APP_ID=[Your DOITT ID]
+> export DOITT_CROL_APP_KEY=[Your DOITT KEY]
     
   ```
 # And check they are indeed available
 cat ENV
   ```
-
- export DOITT_CROL_APP_ID=[*******]
- export DOITT_CROL_APP_KEY=[****************]
-
   ```
 # **Source and activate**
 source ENV
