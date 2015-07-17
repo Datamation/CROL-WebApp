@@ -75,10 +75,10 @@ layout:
 
    cat ENV
   ```
-    <pre>
+    ```
     export DOITT_CROL_APP_ID=[*******]
     export DOITT_CROL_APP_KEY=[****************]
-    </pre>
+    ```
   ```
    # **Source and activate**
 
