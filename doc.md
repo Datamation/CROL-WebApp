@@ -4,7 +4,7 @@ layout:
 markdown: redcarpet
 highlighter: pygments
 ---
-#CROW-WebApp
+#CROW-WebApp Standalone
 
 ###What's in the box?
 
@@ -18,7 +18,7 @@ highlighter: pygments
   1. [Virtualbox](https://www.virtualbox.org/)
   2. [Vagrant](https://www.vagrantup.com/)
 
-   **Important:** You'll have to edit the host's /etc/hosts file to resolve crownyc-ubuntu-trusty64 to localhost.
+   **Important note:** You'll have to edit the host's /etc/hosts file to resolve crownyc-ubuntu-trusty64 to localhost.
 
    ```crownyc-ubuntu-trusty64	127.0.0.1```
 
