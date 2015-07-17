@@ -1,16 +1,17 @@
 ---
-title: crol-webapp running a local vm-box
+title: crow-webapp running a local vm-box
 layout:
 ---
+#CROW-WebApp
 
-# What's in the box?
+###What's in the box?
 
   1. GlassFish4-1
   2. JAVA 7 Build env
   3. nginx
   4. uWSGI
 
-# Required Prerequisites
+###Required Prerequisites
 
   1. [Virtualbox](https://www.virtualbox.org/)
   2. [Vagrant](https://www.vagrantup.com/)
@@ -21,7 +22,7 @@ layout:
 
    ```Vagrantfile``` Vagrant virtualbox config file
 
-# Installation
+###Running Standalone
 
   2. Boot the virtual box
 
@@ -51,7 +52,7 @@ layout:
 
   4. Switch to the addressparser 
 
-   vagrant@crownyc-ubuntu-trusty64:$ ```cd ~/dev/parsers/addressparser```
+   ```cd ~/dev/parsers/addressparser```
 
   5. Update the addressparser with the latest version
 
@@ -59,7 +60,7 @@ layout:
 
   6. Check that the correct Java version is installed
 
-   :~/dev/parsers/addressparser$ ```java -version```
+   ```java -version```
 
    <pre>
    java version "1.7.0_79"
@@ -78,9 +79,9 @@ layout:
 
    Create ENV
 
-   :~/dev/parsers/addressparser$ ```touch ENV```
+   ```touch ENV```
 
-   :~/dev/parsers/addressparser$ ```sudo vi ENV```
+   ```sudo vi ENV```
 
     <pre>
     export DOITT_CROL_APP_ID=[paste DOITT ID]
@@ -89,30 +90,30 @@ layout:
 
    **Check they are indeed available**
 
-   :~/dev/parsers/addressparser$ ```cat ENV```
+   ```cat ENV```
 
     <pre>
     export DOITT_CROL_APP_ID=[*******]
     export DOITT_CROL_APP_KEY=[****************]
     </pre>
 
-   **Source the file and activate**
+   **Source and activate**
 
-   :~/dev/parsers/addressparser$ ```source ENV```
+   ```source ENV```
 
-   :~/dev/parsers/addressparser$ ```source env_addressparser/bin/activate```
+   ```source env_addressparser/bin/activate```
 
   9. Stop the nginx service
 
-   :~/dev/parsers/addressparser$ ```sudo service nginx stop```
+   ```sudo service nginx stop```
 
   10. Start up the web server
 
-   :~/dev/parsers/addressparser$ ```python webserver.py```
+   ```python webserver.py```
 
    **Now from your HOST browser navigate to:** ```http://crownyc-ubuntu-trusty64:5000/api```
 
-# Endpoints:
+### Endpoints:
   1. crol-interface: [http://crownyc-ubuntu-trusty64:8080/crol/v12](http://crownyc-ubuntu-trusty64:8080/crol/v12)
   2. GlassFish Admin:[http://crownyc-ubuntu-trusty64:4848](http://crownyc-ubuntu-trusty64:4848)
   3. Address Parser 
