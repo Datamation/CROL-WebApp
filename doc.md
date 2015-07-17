@@ -56,7 +56,7 @@ layout:
 
   5. Update the addressparser with the latest version
 
-   :~/dev/parsers/addressparser$ ```git pull```
+   ```git pull```
 
   6. Check that the correct Java version is installed
 
@@ -71,24 +71,23 @@ layout:
 
   7. Isolate and test the addressparser
 
-   :~/dev/parsers/addressparser$ ```pwd```
+   ```pwd```
 
    /home/vagrant/dev/parsers/addressparser
 
-  8. Add the DOITT API_ID and APP_KEY
-
-   Create ENV
-
-   ```touch ENV```
-
-   ```sudo vi ENV```
+  8. Create ENV and ddd the DOITT API_ID and APP_KEY
+   
+   ```
+   touch ENV
+   sudo vi ENV
+   ```
 
     <pre>
-    export DOITT_CROL_APP_ID=[paste DOITT ID]
-    export DOITT_CROL_APP_KEY=[paste DOITT KEY]
+    export DOITT_CROL_APP_ID=[Your DOITT ID]
+    export DOITT_CROL_APP_KEY=[Your DOITT KEY]
     </pre>
 
-   **Check they are indeed available**
+   Check they are indeed available
 
    ```cat ENV```
 
@@ -99,9 +98,10 @@ layout:
 
    **Source and activate**
 
-   ```source ENV```
-
-   ```source env_addressparser/bin/activate```
+   ```
+   source ENV
+   source env_addressparser/bin/activate
+   ```
 
   9. Stop the nginx service
 
