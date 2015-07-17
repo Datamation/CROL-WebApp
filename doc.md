@@ -77,8 +77,7 @@ layout:
 
   8. Create ENV and ddd the DOITT API_ID and APP_KEY
    
-   ```
-   touch ENV
+   ```touch ENV
    sudo vi ENV
    ```
 
@@ -98,8 +97,7 @@ layout:
 
    **Source and activate**
 
-   ```
-   source ENV
+   ```source ENV
    source env_addressparser/bin/activate
    ```
 
