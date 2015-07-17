@@ -24,9 +24,9 @@ layout:
 
 ###Running Standalone
 
-  2. Boot the virtual box
+  2. In the terminal type
 
-   ```vagrant up --provider=virtualbox```
+  ```vagrant up --provider=virtualbox```
 
   <pre>
   ==> default: Machine booted and ready!
@@ -40,27 +40,27 @@ layout:
 
   3. SSH into the vm-box
 
-   ```vagrant ssh```
+  ```vagrant ssh```
 
    Now dump the contents of the following to see config options:
 
-   ```cat /etc/init/addressparser.conf```
+  ```cat /etc/init/addressparser.conf```
 
    and this one to view default site info:
 
-   ```cat /etc/nginx/sites-available/addressparser```
+  ```cat /etc/nginx/sites-available/addressparser```
 
   4. Switch to the addressparser 
 
-   ```cd ~/dev/parsers/addressparser```
+  ```cd ~/dev/parsers/addressparser```
 
   5. Update the addressparser with the latest version
 
-   ```git pull```
+  ```git pull```
 
   6. Check that the correct Java version is installed
 
-   ```java -version```
+  ```java -version```
 
    <pre>
    java version "1.7.0_79"
@@ -71,13 +71,14 @@ layout:
 
   7. Isolate and test the addressparser
 
-   ```pwd```
+  ```pwd```
 
    /home/vagrant/dev/parsers/addressparser
 
   8. Create ENV and ddd the DOITT API_ID and APP_KEY
    
-   ```touch ENV
+   ```
+   touch ENV
    sudo vi ENV
    ```
 
