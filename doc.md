@@ -26,7 +26,8 @@ layout:
 
   2. In the terminal type
 
-  ```vagrant up --provider=virtualbox```
+  ```
+  vagrant up --provider=virtualbox
 
   <pre>
   ==> default: Machine booted and ready!
@@ -38,29 +39,29 @@ layout:
   ==> default: to force provisioning. Provisioners marked to run always will still run
   </pre>
 
-  3. SSH into the vm-box
+  # SSH into the vm-box
 
-  ```vagrant ssh```
+  vagrant ssh
 
-   Now dump the contents of the following to see config options:
+  # Now dump the contents of the following to see config options:
 
-  ```cat /etc/init/addressparser.conf```
+  cat /etc/init/addressparser.conf
 
-   and this one to view default site info:
+  # and this one to view default site info:
 
-  ```cat /etc/nginx/sites-available/addressparser```
+  cat /etc/nginx/sites-available/addressparser
 
-  4. Switch to the addressparser 
+  # Switch to the addressparser 
 
-  ```cd ~/dev/parsers/addressparser```
+  cd ~/dev/parsers/addressparser
 
-  5. Update the addressparser with the latest version
+  # Update the addressparser with the latest version
 
-  ```git pull```
+  git pull
 
-  6. Check that the correct Java version is installed
+  # Check that the correct Java version is installed
 
-  ```java -version```
+  java -version
 
    <pre>
    java version "1.7.0_79"
@@ -69,18 +70,16 @@ layout:
    OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
    </pre>
 
-  7. Isolate and test the addressparser
+  # Isolate and test the addressparser
 
-  ```pwd```
+  pwd
 
    /home/vagrant/dev/parsers/addressparser
 
-  8. Create ENV and ddd the DOITT API_ID and APP_KEY
+  # Create ENV and ddd the DOITT API_ID and APP_KEY
    
-   ```
    touch ENV
    sudo vi ENV
-   ```
 
     <pre>
     export DOITT_CROL_APP_ID=[Your DOITT ID]
@@ -89,26 +88,26 @@ layout:
 
    Check they are indeed available
 
-   ```cat ENV```
+   cat ENV
 
     <pre>
     export DOITT_CROL_APP_ID=[*******]
     export DOITT_CROL_APP_KEY=[****************]
     </pre>
 
-   **Source and activate**
+   # **Source and activate**
 
-   ```source ENV
+   source ENV
    source env_addressparser/bin/activate
+
+  # Stop the nginx service
+
+   sudo service nginx stop
+
+  # Start up the web server
+
+   python webserver.py
    ```
-
-  9. Stop the nginx service
-
-   ```sudo service nginx stop```
-
-  10. Start up the web server
-
-   ```python webserver.py```
 
    **Now from your HOST browser navigate to:** ```http://crownyc-ubuntu-trusty64:5000/api```
 
