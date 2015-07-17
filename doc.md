@@ -92,15 +92,20 @@ python webserver.py
 
 ## Some useful commands: 
 
+nginx: 
 ```
-nginx: sudo service nginx (stop | start | restart)
-addressparser: sudo (stop | start | restart) addressparser
+sudo service nginx (stop | start | restart)
 ```
 
-  ```
+addressparser: 
+```
+sudo (stop | start | restart) addressparser
+```
+
+```
 # Check that the correct Java version is installed
 java -version
-  ```
+```
   
 ```
 java version "1.7.0_79"
