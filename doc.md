@@ -65,7 +65,7 @@ touch ENV
 sudo vi ENV
 cat ENV
 
-# Examples:
+# ENV examples:
 # export DOITT_CROL_APP_ID=[Your DOITT ID]
 # export DOITT_CROL_APP_KEY=[Your DOITT KEY]
     
@@ -82,9 +82,6 @@ python webserver.py
 
 Now from your HOST browser navigate to: ```http://crownyc-ubuntu-trusty64:5000/api```
 
-###The NYC Address Parser:
-addressparser is the python library for parsing NYC addresses. [See this example](https://github.com/CityOfNewYork/addressparser).
-
 ### API Endpoints:
   1. crol-interface: [http://crownyc-ubuntu-trusty64:8080/crol/v12](http://crownyc-ubuntu-trusty64:8080/crol/v12)
   2. GlassFish Admin:[http://crownyc-ubuntu-trusty64:4848](http://crownyc-ubuntu-trusty64:4848)
@@ -92,6 +89,9 @@ addressparser is the python library for parsing NYC addresses. [See this example
      - JSON Spec [GET]: [http://crownyc-ubuntu-trusty64:5000/spec](http://crownyc-ubuntu-trusty64:5000/spec)
      - Swagger [GET]: [http://crownyc-ubuntu-trusty64:5000/api](http://crownyc-ubuntu-trusty64:5000/api)
      - Parser URL [POST]: [http://crownyc-ubuntu-trusty64:5000/parseaddresses](http://crownyc-ubuntu-trusty64:5000/parseaddresses)
+
+###The NYC Address Parser:
+addressparser is the python library for parsing NYC addresses. [See this example](https://github.com/CityOfNewYork/addressparser).
 
 ### Some useful commands: 
 
