@@ -54,7 +54,7 @@ layout:
   git pull
   ```
 
-  2. Isolate and test the addressparser
+  Isolate and test the addressparser:
 
   ```
   # Confirm the path is correct /home/vagrant/dev/parsers/addressparser
@@ -66,10 +66,10 @@ layout:
   touch ENV
   sudo vi ENV
   ```
-    <pre>
+    ```
     export DOITT_CROL_APP_ID=[Your DOITT ID]
     export DOITT_CROL_APP_KEY=[Your DOITT KEY]
-    </pre>
+    ```
   ```
    #Check they are indeed available
 
