@@ -63,28 +63,29 @@ layout:
   2. Isolate and test the addressparser
 
   ```
-  pwd 
   # confirm the path /home/vagrant/dev/parsers/addressparser
+
+  pwd 
 
   # Create ENV and add the DOITT API_ID and APP_KEY
    
-   touch ENV
-   sudo vi ENV
-
+  touch ENV
+  sudo vi ENV
+  ```
     <pre>
     export DOITT_CROL_APP_ID=[Your DOITT ID]
     export DOITT_CROL_APP_KEY=[Your DOITT KEY]
     </pre>
-
-   Check they are indeed available
+  ```
+   #Check they are indeed available
 
    cat ENV
-
+  ```
     <pre>
     export DOITT_CROL_APP_ID=[*******]
     export DOITT_CROL_APP_KEY=[****************]
     </pre>
-
+  ```
    # **Source and activate**
 
    source ENV
