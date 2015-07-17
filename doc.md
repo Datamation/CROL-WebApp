@@ -27,7 +27,7 @@ layout:
   In the terminal type:
 
   ```
-  vagrant up --provider=virtualbox
+vagrant up --provider=virtualbox
   ```
   And wait for it to start up...
   ```
