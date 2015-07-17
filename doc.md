@@ -24,7 +24,7 @@ layout:
 
 ###Running Standalone
 
-  1. In the terminal type
+  1. In the terminal type:
 
   ```
   vagrant up --provider=virtualbox
@@ -39,7 +39,7 @@ layout:
   ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`...
   ==> default: to force provisioning. Provisioners marked to run always will still run
   ```
-  Continue typing
+  Continue typing:
   ```
   # SSH into the vm-box
 
@@ -65,7 +65,8 @@ layout:
   2. Isolate and test the addressparser
 
   ```
-  pwd --> /home/vagrant/dev/parsers/addressparser
+  pwd 
+    vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ /home/vagrant/dev/parsers/addressparser
 
   # Create ENV and ddd the DOITT API_ID and APP_KEY
    
