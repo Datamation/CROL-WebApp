@@ -29,7 +29,8 @@ layout:
   ```
   vagrant up --provider=virtualbox
   ```
-  <pre>
+  And wait for it to start up
+  ```
   ==> default: Machine booted and ready!
   ==> default: Checking for guest additions in VM...
   ==> default: Mounting shared folders
@@ -37,8 +38,8 @@ layout:
       default: /vagrant_data => /Users/marc/Sites/crow-vm-box/data...
   ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`...
   ==> default: to force provisioning. Provisioners marked to run always will still run
-  </pre>
-
+  ```
+  Continue typing
   ```
   # SSH into the vm-box
 
