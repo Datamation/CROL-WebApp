@@ -29,7 +29,7 @@ layout:
   ```
   vagrant up --provider=virtualbox
   ```
-  And wait for it to start up
+  And wait for it to start up...
   ```
   ==> default: Machine booted and ready!
   ==> default: Checking for guest additions in VM...
@@ -39,10 +39,8 @@ layout:
   ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`...
   ==> default: to force provisioning. Provisioners marked to run always will still run
   ```
-  Continue typing:
+  SSH into the vm-box:
   ```
-  # SSH into the vm-box
-
   vagrant ssh
 
   # Now dump the contents of the following to see config options:
@@ -66,9 +64,9 @@ layout:
 
   ```
   pwd 
-    vagrant@crownyc-ubuntu-trusty64:~/dev/parsers/addressparser$ /home/vagrant/dev/parsers/addressparser
+  # confirm the path /home/vagrant/dev/parsers/addressparser
 
-  # Create ENV and ddd the DOITT API_ID and APP_KEY
+  # Create ENV and add the DOITT API_ID and APP_KEY
    
    touch ENV
    sudo vi ENV
