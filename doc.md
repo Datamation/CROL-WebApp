@@ -47,7 +47,7 @@ vagrant ssh
 cat /etc/init/addressparser.conf
 cat /etc/nginx/sites-available/addressparser
 
-# Switch to the addressparser and Update the addressparser with the latest version
+# Switch to the addressparser and pull down the latest version
 cd ~/dev/parsers/addressparser
 git pull
   ```
@@ -70,10 +70,10 @@ sudo vi ENV
 # And check they are indeed available
 cat ENV
   ```
-    ```
+
     export DOITT_CROL_APP_ID=[*******]
     export DOITT_CROL_APP_KEY=[****************]
-    ```
+
   ```
 # **Source and activate**
 source ENV
@@ -104,13 +104,13 @@ addressparser: sudo (stop | start | restart) addressparser
 ```
 
   ```
-  # Check that the correct Java version is installed
-
-  java -version
+# Check that the correct Java version is installed
+java -version
   ```
-   <pre>
-   java version "1.7.0_79"
+  
+```
+java version "1.7.0_79"
 
-   OpenJDK Runtime Environment (IcedTea 2.5.5) (7u79-2.5.5-0ubuntu0.14.04.2)
-   OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
-   </pre>
+OpenJDK Runtime Environment (IcedTea 2.5.5) (7u79-2.5.5-0ubuntu0.14.04.2)
+OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
+```
