@@ -44,12 +44,10 @@ layout:
   vagrant ssh
 
   # Now dump the contents of the following to see config options and default site info:
-
   cat /etc/init/addressparser.conf
   cat /etc/nginx/sites-available/addressparser
 
   # Switch to the addressparser and Update the addressparser with the latest version
-
   cd ~/dev/parsers/addressparser
   git pull
   ```
@@ -58,11 +56,9 @@ layout:
 
   ```
   # Confirm the path is correct /home/vagrant/dev/parsers/addressparser
-
   pwd 
 
   # Create ENV and add the DOITT API_ID and APP_KEY
-   
   touch ENV
   sudo vi ENV
   ```
@@ -72,7 +68,6 @@ layout:
     ```
   ```
    #Check they are indeed available
-
    cat ENV
   ```
     ```
@@ -81,16 +76,13 @@ layout:
     ```
   ```
    # **Source and activate**
-
    source ENV
    source env_addressparser/bin/activate
 
   # Stop the nginx service
-
    sudo service nginx stop
 
   # Start up the web server
-
    python webserver.py
    ```
 
