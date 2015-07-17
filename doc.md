@@ -1,6 +1,8 @@
 ---
 title: crow-webapp running a local vm-box
 layout:
+markdown: redcarpet
+highlighter: pygments
 ---
 #CROW-WebApp
 
