@@ -41,52 +41,52 @@ vagrant up --provider=virtualbox
   ```
   SSH into the vm-box:
   ```
-  vagrant ssh
+vagrant ssh
 
-  # Now dump the contents of the following to see config options and default site info:
-  cat /etc/init/addressparser.conf
-  cat /etc/nginx/sites-available/addressparser
+# Now dump the contents of the following to see config options and default site info:
+cat /etc/init/addressparser.conf
+cat /etc/nginx/sites-available/addressparser
 
-  # Switch to the addressparser and Update the addressparser with the latest version
-  cd ~/dev/parsers/addressparser
-  git pull
+# Switch to the addressparser and Update the addressparser with the latest version
+cd ~/dev/parsers/addressparser
+git pull
   ```
 
-  Isolate and test the addressparser:
-
+Isolate and test the addressparser:
+  
   ```
-  # Confirm the path is correct /home/vagrant/dev/parsers/addressparser
-  pwd 
+# Confirm the path is correct /home/vagrant/dev/parsers/addressparser
+ pwd 
 
-  # Create ENV and add the DOITT API_ID and APP_KEY
-  touch ENV
-  sudo vi ENV
+# Create ENV and add the DOITT API_ID and APP_KEY
+touch ENV
+sudo vi ENV
   ```
     
     export DOITT_CROL_APP_ID=[Your DOITT ID]
     export DOITT_CROL_APP_KEY=[Your DOITT KEY]
     
   ```
-   # And check they are indeed available
-   cat ENV
+# And check they are indeed available
+cat ENV
   ```
     ```
     export DOITT_CROL_APP_ID=[*******]
     export DOITT_CROL_APP_KEY=[****************]
     ```
   ```
-   # **Source and activate**
-   source ENV
-   source env_addressparser/bin/activate
+# **Source and activate**
+source ENV
+source env_addressparser/bin/activate
 
-  # Stop the nginx service
-   sudo service nginx stop
+# Stop the nginx service
+sudo service nginx stop
 
-  # Start up the web server
-   python webserver.py
+# Start up the web server
+python webserver.py
    ```
 
-   **Now from your HOST browser navigate to:** ```http://crownyc-ubuntu-trusty64:5000/api```
+**Now from your HOST browser navigate to:** ```http://crownyc-ubuntu-trusty64:5000/api```
 
 ### Endpoints:
   1. crol-interface: [http://crownyc-ubuntu-trusty64:8080/crol/v12](http://crownyc-ubuntu-trusty64:8080/crol/v12)
