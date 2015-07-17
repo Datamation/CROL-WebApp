@@ -24,7 +24,7 @@ layout:
 
 ###Running Standalone
 
-  1. In the terminal type:
+  In the terminal type:
 
   ```
   vagrant up --provider=virtualbox
@@ -62,12 +62,12 @@ layout:
   touch ENV
   sudo vi ENV
   ```
-    ```
+    
     export DOITT_CROL_APP_ID=[Your DOITT ID]
     export DOITT_CROL_APP_KEY=[Your DOITT KEY]
-    ```
+    
   ```
-   #Check they are indeed available
+   # And check they are indeed available
    cat ENV
   ```
     ```
