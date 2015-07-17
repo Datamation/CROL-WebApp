@@ -58,7 +58,7 @@ Isolate and test the addressparser:
   
   ```
 # Confirm the path is correct /home/vagrant/dev/parsers/addressparser
- pwd 
+pwd 
 
 # Create ENV, add the DOITT API_ID and APP_KEY and check they are indeed available
 touch ENV
@@ -69,7 +69,7 @@ cat ENV
 # export DOITT_CROL_APP_ID=[Your DOITT ID]
 # export DOITT_CROL_APP_KEY=[Your DOITT KEY]
     
-# **Source and activate**
+# Source and activate the file
 source ENV
 source env_addressparser/bin/activate
 
@@ -92,15 +92,9 @@ Now from your HOST browser navigate to: ```http://crownyc-ubuntu-trusty64:5000/a
 
 ## Some useful commands: 
 
-nginx: 
-```
-sudo service nginx [stop | start | restart]
-```
+nginx: ```sudo service nginx [stop | start | restart]```
 
-addressparser: 
-```
-sudo [stop | start | restart] addressparser
-```
+addressparser: ```ssudo [stop | start | restart] addressparser```
 
 ```
 # Check that the correct Java version is installed
