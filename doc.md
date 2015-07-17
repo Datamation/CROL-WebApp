@@ -90,7 +90,7 @@ Now from your HOST browser navigate to: ```http://crownyc-ubuntu-trusty64:5000/a
      - Swagger [GET]: [http://crownyc-ubuntu-trusty64:5000/api](http://crownyc-ubuntu-trusty64:5000/api)
      - Parser URL [POST]: [http://crownyc-ubuntu-trusty64:5000/parseaddresses](http://crownyc-ubuntu-trusty64:5000/parseaddresses)
 
-## Some useful commands: 
+### Some useful commands: 
 
 nginx: ```sudo service nginx [stop | start | restart]```
 
