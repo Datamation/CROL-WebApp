@@ -43,27 +43,21 @@ layout:
   ```
   vagrant ssh
 
-  # Now dump the contents of the following to see config options:
+  # Now dump the contents of the following to see config options and default site info:
 
   cat /etc/init/addressparser.conf
-
-  # and this one to view default site info:
-
   cat /etc/nginx/sites-available/addressparser
 
-  # Switch to the addressparser 
+  # Switch to the addressparser and Update the addressparser with the latest version
 
   cd ~/dev/parsers/addressparser
-
-  # Update the addressparser with the latest version
-
   git pull
   ```
 
   2. Isolate and test the addressparser
 
   ```
-  # confirm the path /home/vagrant/dev/parsers/addressparser
+  # Confirm the path is correct /home/vagrant/dev/parsers/addressparser
 
   pwd 
 
